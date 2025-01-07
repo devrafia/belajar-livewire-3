@@ -4,16 +4,16 @@
         <form action="" wire:submit="save">
             <div class="my-4">
                 <label for="title" class="form-label">Title</label>
-                <input type="text" wire:model="title" class="form-control" name="title" id="title"
+                <input type="text" wire:model="form.title" class="form-control" name="title" id="title"
                     rows="3"></input>
-                @error('title')
+                @error('form.title')
                     <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
             <div class="mb-4">
                 <label for="body" class="form-label">Body</label>
-                <textarea wire:model="body" class="form-control" name="body" id="body"></textarea>
-                @error('body')
+                <textarea wire:model="form.body" class="form-control" name="body" id="body"></textarea>
+                @error('form.body')
                     <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
