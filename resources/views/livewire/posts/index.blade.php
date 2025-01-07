@@ -1,3 +1,5 @@
 <div>
-    Posts: If you look to others for fulfillment, you will never truly be fulfilled.
+    <div class="col-md-6">
+        <livewire:posts.create></livewire:posts.create>
+    </div>
 </div>
