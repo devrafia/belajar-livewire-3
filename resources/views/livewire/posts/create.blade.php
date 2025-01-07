@@ -1,4 +1,5 @@
 <div>
+    <x-flash-message />
     <div class="card-body">
         <h5 class="card-title">New Post</h5>
         <form action="" wire:submit="save">

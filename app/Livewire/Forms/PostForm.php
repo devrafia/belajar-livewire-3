@@ -22,6 +22,7 @@ class PostForm extends Form
         $user = User::find(1);
         $user->posts()->create($validatedData);
         // dd($validatedData);
+        flash('Post berhasil di tambah', 'success');
         $this->reset();
     }
 }
